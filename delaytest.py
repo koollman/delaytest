@@ -16,4 +16,4 @@ def process():
     app.logger.info(f"#{run_id} - timeout test will wait {sleep_duration} seconds")
     time.sleep(sleep_duration)
     app.logger.info(f"#{run_id} - timeout test has waited {sleep_duration} seconds")
-    return f"Timeout test {run_id} complete: {sleep_duration} seconds"
+    return f"Timeout test {run_id} complete: {sleep_duration} seconds\n"
