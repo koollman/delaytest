@@ -13,7 +13,7 @@ def process():
         sleep_duration = request_json["sleep_duration"] * 60
     else:
         sleep_duration = 5 * 60
-    app.logger.info(f"#{run_id} - IdKids timeout test will wait {sleep_duration} seconds")
+    app.logger.info(f"#{run_id} - timeout test will wait {sleep_duration} seconds")
     time.sleep(sleep_duration)
-    app.logger.info(f"#{run_id} - IdKids timeout test has waited {sleep_duration} seconds")
+    app.logger.info(f"#{run_id} - timeout test has waited {sleep_duration} seconds")
     return f"Timeout test {run_id} complete: {sleep_duration} seconds"
